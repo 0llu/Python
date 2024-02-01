@@ -1,5 +1,56 @@
-import math
+#Hendri Olev Serman
+#01.02.2024
+#IT-23
+
 import random
+
+# # #Vanused
+
+# def vanused():
+#     vanused = [19, 17, 17, 16, 16, 16]
+#     print("Vanuste loend:", vanused)
+#     print("Suurim arv:", max(vanused))
+#     print("Väikseim arv:", min(vanused))
+#     print("Kogusumma:", sum(vanused))
+#     print("Keskmine:", sum(vanused)/len(vanused))
+    
+# vanused()
+
+
+
+
+
+# # Vähem kui viis
+
+# a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+# def vähem_kui_viis():
+#     new_list = []
+#     for i in a: new_list.append(i) if i < 5 else None
+#     print(new_list)
+# print()
+# add = int(input("Sisesta number: "))
+# a.append(add)
+
+# vähem_kui_viis()
+
+
+
+
+
+# # Paaris või paaritu
+
+# def paaris_või_paaritu():
+#     arv = int(input("Sisesta arv: "))
+#     if arv == 0:
+#         print("Sisesta mida iganes, aga mitte 0!")
+#     elif arv % 2 == 0:
+#         print("Arv on paaris")
+#     else:
+#         print("Arv on paaritu")
+        
+# paaris_või_paaritu()
+
+
 
 
 
@@ -28,6 +79,8 @@ import random
 
 
 
+
+
 # #Kaugushüpe
 
 # def kaugushüpe():
@@ -47,22 +100,27 @@ import random
 
 
 
+
+
 # #Eurokalkulaator
 
-# def eurokalkulaator():
-#     valik = input("Kas soovite teisendada Eurosid[EUR] või Kroone[EEK]: ").upper()
+# def eurod_kroonideks():
 #     kroonid = 15.6466
+#     summa_eurodes = int(input("Sisesta summa eurodes: "))
+#     summa_kroonides = summa_eurodes * kroonid
+#     print(f"{summa_eurodes} eurot on {summa_kroonides} krooni")
 
-#     if valik == "EUR":
-#         summa_eurodes = int(input("Sisestage summa eurodes: "))
-#         summa_kroonides = summa_eurodes * kroonid
-#         print(f"{summa_eurodes} eurot on {summa_kroonides} krooni")
-#     elif valik == "EEK":
-#         summa_kroonides = int(input("Sisestage summa kroonides: "))
-#         summa_eurodes = summa_kroonides / kroonid
-#         print(f"{summa_kroonides} krooni on {summa_eurodes} eurot")
-#     else:
-#         print("Vale valik!")
+# def kroonid_eurodeks():
+#     kroonid = 15.6466
+#     summa_kroonides = int(input("Sisesta summa kroonides: "))
+#     summa_eurodes = summa_kroonides / kroonid
+#     print(f"{summa_kroonides} krooni on {summa_eurodes} eurot")
 
+# teisendamise_tyyp = input("Musi mario :) , kas soovid teisendada Eurosid[EUR] või Kroone[EEK]: ").upper()
 
-# eurokalkulaator()
+# if teisendamise_tyyp == "EUR":
+#     eurod_kroonideks()
+# elif teisendamise_tyyp == "EEK":
+#     kroonid_eurodeks()
+# else:
+#     print("Kas sa kirjutada ei oska? Vali üks kahest: EUR või EEK")
